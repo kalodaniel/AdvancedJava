@@ -1,27 +1,31 @@
 package org.example;
 
 public class Operands {
-    private String a;
-    private String b;
+    private Integer a;
+    private Integer b;
 
-    public Operands(String a, String b) {
+    public Operands(){
+
+    }
+
+    public Operands(Integer a, Integer b) {
         this.a = a;
         this.b = b;
     }
 
-    public String getA() {
+    public Integer getA() {
         return a;
     }
 
-    public void setA(String a) {
+    public void setA(Integer a) {
         this.a = a;
     }
 
-    public String getB() {
+    public Integer getB() {
         return b;
     }
 
-    public void setB(String b) {
+    public void setB(Integer b) {
         this.b = b;
     }
 }

@@ -6,7 +6,11 @@ import java.util.List;
 public class Experiment {
     public static void main(String args[]){
         List<Integer> data = new Measurement().getData();
-        System.out.println(new LaterAnalize().process(data));
+        run(new Analize(),data);
 
+    }
+
+    public static void run(Analize analize, List<Integer> data){
+        System.out.println(analize.process(data));
     }
 }

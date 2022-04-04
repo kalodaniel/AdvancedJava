@@ -7,12 +7,17 @@ public class LaterAnalize extends Analize {
     public Double process(List<Integer> data){
         assertNotNullOrNotEmptyData(data);
         assertNotZeroData(data);
+        return getSum(data);
+
+    }
+
+    private Double getSum(List<Integer> data) {
         Double sum = 0.0;
 
         for (Integer item:data) {
             sum += item;
         }
-        return sum / data.size();
+        return sum;
     }
 
     protected void assertNotZeroData(List<Integer> data){

@@ -1,18 +1,13 @@
 package org.example;
 
+import com.fasterxml.jackson.dataformat.xml.XmlMapper;
+
 import java.io.FileNotFoundException;
 
-/**
- * Hello world!
- *
- */
 public class MainFrame
 {
     public static void main( String[] args ) {
-        run(new ConcreteImplementation());
-    }
-
-    private static void run(FlowInterfaceProvider provider) {
-        provider.runFromXMLToXML();
+      Step step = new FromCSVToXML(new XmlMapper(), new CsvReaderAdapterImpl());
+      step.doIt();
     }
 }

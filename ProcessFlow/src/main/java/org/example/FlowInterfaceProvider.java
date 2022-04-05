@@ -15,7 +15,6 @@ public abstract class FlowInterfaceProvider {
     public abstract void writeToCSV(List<String> list);
     public abstract void writeToXML(List<String> list);
 
-
     void runFromCSVToXML(){
         Document doc = csvToXML();
         Double avg = aggregateResult(doc);

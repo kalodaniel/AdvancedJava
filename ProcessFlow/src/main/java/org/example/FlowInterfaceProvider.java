@@ -1,8 +1,6 @@
 package org.example;
 
 import org.w3c.dom.Document;
-
-import javax.print.Doc;
 import java.util.List;
 
 

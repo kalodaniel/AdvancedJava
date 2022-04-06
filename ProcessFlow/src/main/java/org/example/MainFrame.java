@@ -6,8 +6,9 @@ import java.io.FileNotFoundException;
 
 public class MainFrame
 {
-    public static void main( String[] args ) {
-      Step step = new FromCSVToXML(new XmlMapper(), new CsvReaderAdapterImpl());
+    public static void main( String[] args ) throws FileNotFoundException {
+      Step step = new FromXmlToCsv();
+      step.setInput("src/points.xml");
       step.doIt();
     }
 }
